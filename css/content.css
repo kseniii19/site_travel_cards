@@ -1,0 +1,292 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #000000;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'PTMono', monospace, sans-serif;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Мобильный экран: базовая ширина 430px */
+.container {
+  width: 100vw;
+  max-width: 430px;
+  background-color: #000000;
+  padding: 12vw 5.5vw 22vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* --- ШАПКА --- */
+.hero-title {
+  font-size: 7.4vw; /* Увеличено (~32px) */
+  line-height: 1.25;
+  font-weight: normal;
+  margin-bottom: 3.5vw;
+}
+
+.hero-address {
+  font-size: 4vw; /* Увеличено (~17px) */
+  line-height: 1.5;
+  color: #cccccc;
+  margin-bottom: 7vw;
+}
+
+/* =========================================
+   ФОТО 1: ДВОР (во всю ширину) + СТРЕЛКА 1
+   ========================================= */
+.visual-hero {
+  position: relative;
+  width: 120vw;
+  max-width: 430px;
+  margin-left: -5.5vw;
+  margin-right: -5.5vw;
+  margin-bottom: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-hero {
+  width: 150%;
+  display: block;
+  height: auto;
+}
+
+/* Стрелка 1: огибает всё фото сверху донизу */
+.arrow-hero {
+  position: absolute;
+  top: -12vw;
+  left: 2vw;
+  width: 58vw;
+  height: 118%;
+  pointer-events: none;
+  z-index: 10;
+  object-fit: fill;
+}
+
+/* =========================================
+   ФОТО 2: ВИТРАЖ + СТРЕЛКА 3
+   ========================================= */
+.visual-stained {
+  position: relative;
+  width: 100vw;
+  max-width: 430px;
+  margin-left: -5.5vw;
+  margin-right: -5.5vw;
+  margin-bottom: 7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-stained {
+  width: 96%;
+  display: block;
+  height: auto;
+}
+
+/* Стрелка 3: петля слева от витража */
+.arrow-stained {
+  position: absolute;
+  top: 24%;
+  left: 3vw;
+  width: 26vw;
+  height: auto;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* --- КНОПКИ --- */
+.btn-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 6vw 0 24vw; /* исходный отступ: первая кнопка остается на месте */
+}
+
+/* ТОЛЬКО ВТОРАЯ КНОПКА (на карту): подтягиваем вплотную к тексту блока 01 */
+a[href*="maps"].btn-link {
+  margin: -12vw 0 24vw; /* подтягивает кнопку вверх прямо под текст */
+}
+
+.btn-img {
+  width: 100%;
+  max-width: 86vw;
+  height: auto;
+  display: block;
+  transition: transform 0.15s ease;
+}
+
+.btn-link:active .btn-img {
+  transform: scale(0.97);
+}
+
+/* --- СЕКЦИИ КОНТЕНТА (01, 02, 03) --- */
+.section-block {
+  margin-top: 8vw;
+  margin-bottom: 20vw;
+  position: relative;
+}
+
+.section-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 3.5vw;
+  margin-bottom: 7vw;
+  position: relative;
+}
+
+.section-idx {
+  font-size: 9.2vw; /* Увеличено (~40px) */
+  font-weight: bold;
+  line-height: 1;
+}
+
+.section-name {
+  font-size: 5.7vw; /* Увеличено (~24px) */
+  line-height: 1.25;
+  font-weight: normal;
+  max-width: 58vw;
+}
+
+/* Стрелка 2: дуга справа в блоке 01 */
+.arrow-header {
+  position: absolute;
+  right: 2vw;
+  top: 0vw;
+  width: 17vw;
+  height: auto;
+  pointer-events: none;
+}
+
+/* Основной текст: крупный и комфортный для чтения */
+.text-content {
+  font-size: 4.2vw; /* Увеличено (~18px) */
+  line-height: 1.65;
+  color: #dddddd;
+  text-align: left;
+  margin-bottom: 5vw;
+}
+
+/* --- СПИСОК ФАКТОВ В БЛОКЕ 03 --- */
+.secrets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6.5vw;
+  margin-top: 4vw;
+}
+
+.secret-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 3.5vw;
+}
+
+.secret-dot {
+  width: 2.4vw;
+  height: 2.4vw;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-top: 2vw;
+  flex-shrink: 0;
+}
+
+.secret-text {
+  font-size: 4.1vw; /* Увеличено (~17.5px) */
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+/* Стрелка 4 и финальная кнопка */
+.arrow-footer-box {
+  display: flex;
+  justify-content: center;
+  margin-top: -15vw;
+}
+
+.arrow-footer-img {
+  width: 21vw;
+  height: auto;
+  pointer-events: none;
+}
+
+.arrow-footer-box + .btn-link {
+  margin-top: 0;
+  margin-bottom: 6vw;
+}
+
+/* --- ДЕСКТОПНЫЙ ОГРАНИЧИТЕЛЬ (> 430px) --- */
+@media (min-width: 431px) {
+  .container {
+    padding: 52px 24px 90px;
+  }
+  .hero-title { font-size: 32px; margin-bottom: 15px; }
+  .hero-address { font-size: 17px; margin-bottom: 30px; }
+
+  /* Фото 1 */
+  .visual-hero {
+    width: calc(100% + 48px);
+    margin-left: -24px;
+    margin-right: -24px;
+    margin-bottom: 22px;
+  }
+  .arrow-hero {
+    top: -52px;
+    left: 8px;
+    width: 250px;
+  }
+
+  /* Фото 2 */
+  .visual-stained {
+    width: calc(100% + 48px);
+    margin-left: -24px;
+    margin-right: -24px;
+    margin-bottom: 30px;
+  }
+  .arrow-stained {
+    top: 24%;
+    left: 12px;
+    width: 112px;
+  }
+
+  .arrow-header {
+    right: 8px;
+    top: -4px;
+    width: 72px;
+  }
+
+  .btn-link { margin: 26px 0 100px; }
+  a[href*="maps"].btn-link { margin: -50px 0 100px; }
+  .btn-img { max-width: 370px; }
+
+  .section-block { margin-bottom: 70px; }
+  .section-header { gap: 15px; margin-bottom: 30px; }
+  .section-idx { font-size: 40px; }
+  .section-name { font-size: 24px; max-width: 260px; }
+  .text-content { font-size: 18px; margin-bottom: 22px; }
+
+  .secrets-list { gap: 28px; margin-top: 18px; }
+  .secret-row { gap: 15px; }
+  .secret-dot { width: 10px; height: 10px; margin-top: 8px; }
+  .secret-text { font-size: 17.5px; }
+
+  .arrow-footer-box { margin-top: -12px; margin-bottom: -12px; }
+  .arrow-footer-img { width: 90px; }
+  .arrow-footer-box + .btn-link { margin-top: 0; margin-bottom: 26px; }
+}
