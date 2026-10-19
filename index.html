@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Азиатское бистро Цейлон</title>
-  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -12,100 +11,119 @@
   <main class="container">
 
     <!-- Экран 1: Шапка, адрес, фото двора -->
-    <h1 class="hero-title">Азиатское бистро<br>Цейлон</h1>
-    <p class="hero-address">
-      ул. Большая Покровская, 9Б<br>
-      (вход в арку)
-    </p>
+    <header class="hero">
+      <h1 class="hero-title">Азиатское бистро<br>Цейлон</h1>
+      <p class="hero-address">
+        ул. Большая Покровская, 9Б<br>
+        (вход в арку)
+      </p>
 
-    <div class="visual-hero">
-      <img src="img/strelka1.svg" alt="" class="arrow-hero">
-      <img src="img/foto_tselon.png" alt="Двор бистро Цейлон" class="photo-hero">
-    </div>
+      <div class="visual-hero">
+        <img src="img/foto_tselon.png" alt="Двор бистро Цейлон" class="photo-hero">
+        <img src="img/strelka1.svg" alt="" class="arrow-hero">
+      </div>
 
- <!-- Кнопка 1: «узнать о месте» -->
-    <a href="#block-01" class="btn-link btn-hero">
-      <img src="img/button1.svg" alt="узнать о месте" class="btn-img">
-    </a>
+      <!-- Кнопка 1: «узнать о месте» -->
+      <a href="#block-01" class="btn-link btn-hero">
+        <img src="img/button1.svg" alt="узнать о месте" class="btn-img">
+      </a>
+    </header>
 
     <!-- Экран 2: Блок 01 «Контекст и атмосфера» -->
-    <section class="section-block" id="block-01">
+    <section class="section-block section-01" id="block-01">
       <div class="section-header">
         <span class="section-idx">01</span>
         <h2 class="section-name">Контекст<br>и атмосфера</h2>
-        <!-- strelka2.svg: полукруглая стрелка в углу -->
         <img src="img/strelka2.svg" alt="" class="arrow-header">
       </div>
 
+      <!-- Стрелка от заголовка к тексту: только для десктопа -->
+      <img src="img/strelka2_desktop.svg" alt="" class="arrow-context-desktop">
+
       <p class="text-content">
-        Цейлон спрятан в глубине исторического квартала на крутом перепаде нижегородского рельефа. Вместо шумного проспекта за аркой открывается тихий террасный дворик — деревянные настилы и тени вековых крон.
+        Цейлон спрятан в глубине<br>
+        исторического квартала<br>
+        на крутом перепаде<br>
+        нижегородского рельефа.<br>
+        Вместо шумного проспекта<br>
+        за аркой открывается тихий<br>
+        террасный дворик —<br>
+        деревянные настилы и тени<br>
+        вековых крон.<br>
+        Сюда приходят за неспешными<br>
+        летними вечерами, азиатскими<br>
+        блюдами и ощущением уюта<br>
+        в самом сердце города
       </p>
-      <p class="text-content">
-        Сюда приходят за неспешными летними вечерами, азиатскими блюдами и ощущением уюта в самом сердце города.
-      </p>
+
+      <!-- Кнопка 2: «открыть на карте» -->
+      <a href="https://yandex.ru/maps/org/tseylon/182956251921/?ll=44.001377%2C56.323577&z=18.75" target="_blank" class="btn-link btn-map">
+        <img src="img/button2.svg" alt="открыть на карте" class="btn-img">
+      </a>
     </section>
 
- <!-- Кнопка 2: «открыть на карте» -->
-    <a href="https://yandex.ru/maps/org/tseylon/182956251921/?ll=44.001377%2C56.323577&z=18.75" target="_blank" class="btn-link btn-map">
-      <img src="img/button2.svg" alt="открыть на карте" class="btn-img">
-    </a>
-
     <!-- Экран 3: Блок 02 «Детали интерьера» с витражом -->
-    <section class="section-block">
+    <section class="section-block section-02">
       <div class="section-header">
         <span class="section-idx">02</span>
         <h2 class="section-name">Детали<br>интерьера</h2>
       </div>
 
-    <div class="visual-stained">
-      <img src="img/strelka3.svg" alt="" class="arrow-stained">
-      <img src="img/foto2.svg" alt="Витраж в интерьере" class="photo-stained">
-    </div>
+      <div class="visual-stained">
+        <img src="img/foto2.svg" alt="Витраж в интерьере" class="photo-stained">
+        <img src="img/strelka3.svg" alt="" class="arrow-stained">
+      </div>
 
       <p class="text-content">
-        Сердце внутреннего зала представляет собой декоративный витраж с тёплой скрытой подсветкой. Графичная раскладка отсылает к эстетике традиционных японских перегородок сёдзи, создавая камерный золотистое освещение даже в пасмурный день.
+        Сердце внутреннего зала<br>
+        представляет собой<br>
+        декоративный витраж<br>
+        с тёплой скрытой<br>
+        подсветкой. Графичная<br>
+        раскладка отсылает<br>
+        к эстетике традиционных<br>
+        японских перегородок сёдзи,<br>
+        создавая камерный<br>
+        золотистое освещение<br>
+        даже в пасмурный день.
       </p>
     </section>
 
     <!-- Экран 4: Блок 03 «Секреты для посетителей» -->
-    <section class="section-block">
+    <section class="section-block section-03">
       <div class="section-header">
         <span class="section-idx">03</span>
         <h2 class="section-name">Секреты<br>для посетителей</h2>
       </div>
 
-      <div class="secrets-list">
-        <div class="secret-row">
-          <span class="secret-dot"></span>
-          <p class="secret-text">
-            Летом здесь готовят авторский холодный цейлонский чай со специями и охлаждающую матчу.
-          </p>
-        </div>
+      <ul class="secrets-list">
+        <li class="secret-row">
+          Летом здесь готовят<br>
+          авторский холодный<br>
+          цейлонский<br>
+          чай со специями<br>
+          и охлаждающую матчу.
+        </li>
+        <li class="secret-row">
+          Идеальное время для<br>
+          визита — после заката<br>
+          солнца, когда во дворе<br>
+          зажигают гирлянды.
+        </li>
+        <li class="secret-row">
+          Узнать подробнее про<br>
+          заведение можно на их<br>
+          сайте!
+        </li>
+      </ul>
 
-        <div class="secret-row">
-          <span class="secret-dot"></span>
-          <p class="secret-text">
-            Идеальное время для визита — после заката солнца, когда во дворе зажигают гирлянды.
-          </p>
-        </div>
+      <!-- Стрелка вниз к кнопке перехода на сайт -->
+      <img src="img/strelka4.svg" alt="" class="arrow-footer">
 
-        <div class="secret-row">
-          <span class="secret-dot"></span>
-          <p class="secret-text">
-            Узнать подробнее про заведение можно на их сайте!
-          </p>
-        </div>
-      </div>
+      <a href="https://ceylon.salutandco.ru/?ysclid=mus9wd3l3i138009856#showmore3" target="_blank" class="btn-link btn-site">
+        <img src="img/button3.svg" alt="сайт Цейлон" class="btn-img">
+      </a>
     </section>
-
-    <!-- strelka4.svg: стрелка вниз к кнопке перехода на сайт -->
-    <div class="arrow-footer-box">
-      <img src="img/strelka4.svg" alt="" class="arrow-footer-img">
-    </div>
-
-    <a href="https://ceylon.salutandco.ru/?ysclid=mus9wd3l3i138009856#showmore3" target="_blank" class="btn-link" style="margin-top: 10px;">
-      <img src="img/button3.svg" alt="сайт Цейлон" class="btn-img">
-    </a>
 
   </main>
 

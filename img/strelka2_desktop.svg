@@ -1,0 +1,7 @@
+<svg width="165" height="165" viewBox="0 0 165 165" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#chalk)" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+<path d="M58 14C30 32 10 64 24 94C38 120 90 132 146 122"/>
+<path d="M118 104L146 122L132 150"/>
+</g>
+<defs><filter id="chalk" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.25 0.25" numOctaves="3" seed="5545"/><feDisplacementMap in="SourceGraphic" scale="8" xChannelSelector="R" yChannelSelector="G"/></filter></defs>
+</svg>
