@@ -46,13 +46,13 @@ img {
 
 /* --- ШАПКА --- */
 .hero-title {
-  font-size: calc(40 * var(--u));
+  font-size: calc(36 * var(--u));
   line-height: 1.12;
   font-weight: normal;
 }
 
 .hero-address {
-  font-size: calc(20 * var(--u));
+  font-size: calc(18 * var(--u));
   line-height: 1.12;
   margin-top: calc(16.2 * var(--u));
 }
@@ -68,10 +68,10 @@ img {
    по бокам прозрачные поля — растягиваем так, чтобы фото встало
    ровно на всю ширину блока, а поля ушли за края */
 .photo-hero {
-  width: calc(100% * 560 / 430);
+  width: calc(100% * 586 / 430);
   max-width: none;
   height: auto;
-  margin-left: calc(-100% * 32 / 430);
+  margin-left: calc(-100% * 62 / 430);
 }
 
 .arrow-hero {
@@ -121,7 +121,7 @@ img {
 }
 
 .section-idx {
-  font-size: calc(60 * var(--u));
+  font-size: calc(54 * var(--u));
   line-height: 1.12;
   font-weight: bold;
   position: relative;
@@ -132,7 +132,7 @@ img {
 }
 
 .section-name {
-  font-size: calc(30 * var(--u));
+  font-size: calc(27 * var(--u));
   line-height: 1.12;
   font-weight: bold;
 }
@@ -149,8 +149,8 @@ img {
 
 /* Основной текст: строки разбиты вручную, как в макете */
 .text-content {
-  font-size: calc(24 * var(--u));
-  line-height: calc(27 * var(--u));
+  font-size: calc(21 * var(--u));
+  line-height: calc(24 * var(--u));
   white-space: nowrap;
 }
 
@@ -196,8 +196,8 @@ img {
 .secret-row {
   position: relative;
   padding-left: calc(35 * var(--u));
-  font-size: calc(24 * var(--u));
-  line-height: calc(27 * var(--u));
+  font-size: calc(21 * var(--u));
+  line-height: calc(24 * var(--u));
   white-space: nowrap;
 }
 
@@ -209,9 +209,9 @@ img {
   content: "";
   position: absolute;
   left: calc(-1 * var(--u));
-  top: calc(4.5 * var(--u));
-  width: calc(19 * var(--u));
-  height: calc(19 * var(--u));
+  top: calc(3.5 * var(--u));
+  width: calc(17 * var(--u));
+  height: calc(17 * var(--u));
   border-radius: 50%;
   background-color: #ffffff;
 }
